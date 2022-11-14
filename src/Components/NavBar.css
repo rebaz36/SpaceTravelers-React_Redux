@@ -1,0 +1,16 @@
+.NavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.Logo {
+  width: 100px;
+  height: 100px;
+}
+
+.Nav {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+}
