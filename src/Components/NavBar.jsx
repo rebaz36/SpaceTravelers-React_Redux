@@ -11,14 +11,26 @@ function NavBar() {
         <h1>Traverlers Hub</h1>
       </div>
       <div className="Nav-List">
-        <NavLink className="Nav-Item" to="/">
+        <NavLink
+          className="Nav-Item"
+          to="/"
+          style={({ isActive }) => (isActive ? { color: 'red' } : { color: 'blue' })}
+        >
           Rockets
         </NavLink>
-        <NavLink className="Nav-Item" to="/missions">
+        <NavLink
+          className="Nav-Item"
+          to="/missions"
+          style={({ isActive }) => (isActive ? { color: 'red' } : { color: 'blue' })}
+        >
           Missions
         </NavLink>
         <h1>|</h1>
-        <NavLink className="Nav-Item" to="/profile">
+        <NavLink
+          className="Nav-Item"
+          to="/profile"
+          style={({ isActive }) => (isActive ? { color: 'red' } : { color: 'blue' })}
+        >
           My Profile
         </NavLink>
       </div>

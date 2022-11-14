@@ -29,3 +29,7 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
+
+.Nav-Item:active {
+  color: #f00;
+}
