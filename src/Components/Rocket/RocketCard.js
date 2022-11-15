@@ -1,10 +1,16 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { reservedRocket } from '../../Redux/Rockets/Rockets';
 import './RocketCard.css';
 
 function RocketCard(prop) {
-  const { props } = prop;
+  const dispatch = useDispatch();
+  const reservedReckotHandler = (e) => {
+    dispatch(reservedRocket(e.target.id));
+  };
 
+  const { props } = prop;
   const {
     id, rocketName, description, flickrImages,
   } = props;
@@ -17,7 +23,7 @@ function RocketCard(prop) {
           <span>reserved</span>
           {description}
         </p>
-        <button type="button" id={id}>Reserve Rocket</button>
+        <button type="button" id={id} onClick={reservedReckotHandler}>Reserve Rocket</button>
       </div>
     </div>
   );
