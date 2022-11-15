@@ -11,7 +11,7 @@ export default function Rockets() {
   }, [dispatch]);
   return (
     <div>
-      <RocketCard props={rockets} />
+      {rockets.map((rocket) => <RocketCard props={rocket} key={rocket.id} />)}
     </div>
   );
 }

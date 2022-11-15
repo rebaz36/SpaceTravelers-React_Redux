@@ -7,9 +7,9 @@ export const getRockets = createAsyncThunk(
     const rockets = response.map((rocket) => {
       const rockets = {
         id: rocket.rocket_id,
-        rocket_name: rocket.rocket_name,
+        rocketName: rocket.rocket_name,
         description: rocket.description,
-        flickr_images: rocket.flickr_images,
+        flickrImages: rocket.flickr_images,
       };
       return rockets;
     });
