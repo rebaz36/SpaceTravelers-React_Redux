@@ -25,4 +25,12 @@ button {
 
 .Rocket__info > button {
   width: 130px;
+  height: 30px;
+  background-color: rgb(42, 42, 213);
+  border-radius: 5px;
+}
+
+.Rocket__info > p > span {
+  background-color: rgb(42, 42, 213);
+  border-radius: 5px;
 }
