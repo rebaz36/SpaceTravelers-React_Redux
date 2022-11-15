@@ -1,0 +1,19 @@
+/* stylelint-disable selector-type-no-unknown */
+/* stylelint-disable selector-type-case */
+.Table {
+  padding: 3rem 6rem;
+}
+
+.Table-Header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: left;
+  border: 1px solid #dee2e6;
+}
+
+.Header-Item {
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 0.5rem 1rem;
+  border: 1px solid #dee2e6;
+}

@@ -1,0 +1,25 @@
+.Odd-Row {
+  background-color: #f2f2f2;
+  border: 10px solid #dee2e6;
+}
+
+.Even-Row {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 0.8rem;
+}
+
+.bold {
+  display: flex;
+  font-weight: bold;
+  place-self: center;
+  justify-self: center;
+  align-self: center;
+  place-items: center;
+  align-items: center;
+}
