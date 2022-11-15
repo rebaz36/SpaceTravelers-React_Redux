@@ -1,7 +1,10 @@
 import React from 'react';
+import MissionTable from '../Components/MissionTable';
 
 export default function Missions() {
   return (
-    <div>Missions</div>
+    <div>
+      <MissionTable />
+    </div>
   );
 }
