@@ -1,7 +1,9 @@
 import React from 'react';
 import './RocketCard.css';
 
-function RocketCard() {
+function RocketCard(prop) {
+  const { props } = prop;
+  console.log(props);
   return (
     <div className="Rocket__card">
       <img src="https://i.ytimg.com/vi/1yBwWLunlOM/maxresdefault.jpg" alt="Rocket" />

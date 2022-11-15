@@ -9,10 +9,9 @@ export default function Rockets() {
   useEffect(() => {
     dispatch(getRockets());
   }, [dispatch]);
-  console.log(rockets);
   return (
     <div>
-      <RocketCard />
+      <RocketCard props={rockets} />
     </div>
   );
 }
