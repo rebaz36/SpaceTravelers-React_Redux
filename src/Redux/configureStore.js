@@ -1,15 +1,15 @@
 // redux configuration
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
-// import missionsReducer from './Missions/Missions';
+import missionsReducer from './Missions/Missions';
 // import rocketsReducer from './Rockets/Rockets';
 
-const bookReducers = combineReducers({
-  // Missions: booksReducer,
+const spaceReducers = combineReducers({
+  Missions: missionsReducer,
   // Rockets: categoriesReducer,
 });
 
 const store = configureStore({
-  reducer: bookReducers,
+  reducer: spaceReducers,
 });
 
 export default store;

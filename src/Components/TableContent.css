@@ -1,0 +1,31 @@
+.Odd-Row {
+  background-color: #f2f2f2;
+  border: 10px solid #dee2e6;
+}
+
+.Even-Row {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 0.8rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.button-wrapper {
+  padding: 1rem;
+}
+
+.Active-Member {
+  background-color: #e9f7ef;
+}
+
+.Inactive-Member {
+  background-color: #f8d7da;
+}
