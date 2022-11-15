@@ -1,3 +1,28 @@
-h1 {
-  color: red;
+.Rocket__card {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+
+.Rocket__card > img {
+  object-fit: fill;
+  width: 15%;
+  min-width: 200px;
+  min-height: 100px;
+}
+
+.Rocket__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.Rocket__info > h3,
+p,
+button {
+  text-align: left;
+}
+
+.Rocket__info > button {
+  width: 130px;
 }
