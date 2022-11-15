@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import './MyRocket.css';
 
-function MyRocket() {
+const MyRocket = () => {
   const rockets = useSelector((state) => state.Rockets.rockets);
   return (
     <div className="MyRocket">
@@ -15,6 +15,6 @@ function MyRocket() {
       </ul>
     </div>
   );
-}
+};
 
 export default MyRocket;

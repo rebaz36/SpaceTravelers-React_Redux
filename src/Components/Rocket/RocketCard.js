@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { reserveRocket, cancelRocket } from '../../Redux/Rockets/Rockets';
 import './RocketCard.css';
 
-function RocketCard(prop) {
+const RocketCard = (prop) => {
   const { props } = prop;
   const {
     id, rocketName, description, flickrImages, reserved,
@@ -31,6 +31,6 @@ function RocketCard(prop) {
       </div>
     </div>
   );
-}
+};
 
 export default RocketCard;
