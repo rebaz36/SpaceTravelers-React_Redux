@@ -1,3 +1,25 @@
-.myRocket {
+.MyRocket {
   display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding-left: 10px;
+}
+
+.MyRocket > h3 {
+  text-align: left;
+  margin: 0;
+}
+
+.MyRocket > ul {
+  border: rgb(238, 238, 238) solid 1px;
+  padding: 0;
+  margin: 0;
+}
+
+.MyRocket > ul > li {
+  list-style: none;
+  height: 40px;
+  padding-left: 10px;
+  text-align: left;
+  border: solid rgb(238, 238, 238) 1px;
 }
