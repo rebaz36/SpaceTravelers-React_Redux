@@ -15,11 +15,17 @@
 }
 
 .bold {
-  display: flex;
   font-weight: bold;
-  place-self: center;
-  justify-self: center;
-  align-self: center;
-  place-items: center;
-  align-items: center;
+}
+
+.button-wrapper {
+  padding: 1rem;
+}
+
+.Active-Member {
+  background-color: #e9f7ef;
+}
+
+.Inactive-Member {
+  background-color: #f8d7da;
 }

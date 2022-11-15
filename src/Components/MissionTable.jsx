@@ -24,7 +24,7 @@ export default function MissionTable() {
         <tr className="Header-Row-Container">
           <th className="Header-Item">Mission</th>
           <th className="Header-Item">Description</th>
-          <th className="Header-Item">Mission Name</th>
+          <th className="Header-Item">Status</th>
           <th className="Header-Item">{}</th>
         </tr>
       </thead>
