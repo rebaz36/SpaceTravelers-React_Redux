@@ -9,7 +9,7 @@ const MyRocket = () => {
       <h3>My Rockets</h3>
       <ul>
         {rockets.map((rocket) => {
-          if (rocket.reserved === true) { return <li className="reserved" key={rocket.id}>{rocket.rocketName}</li>; }
+          if (rocket.reserved === true) { return <li key={rocket.id}>{rocket.rocketName}</li>; }
           return null;
         })}
       </ul>

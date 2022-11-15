@@ -27,7 +27,7 @@ const RocketCard = (prop) => {
           {reserved && <span>reserved</span>}
           {description}
         </p>
-        <button type="button" id={id} onClick={reservedReckotHandler}>{!reserved ? 'Reserve Rocket' : 'Cancel Reservation'}</button>
+        <button type="button" id={id} onClick={reservedReckotHandler} className={!reserved ? 'reserved' : 'cancel'}>{!reserved ? 'Reserve Rocket' : 'Cancel Reservation'}</button>
       </div>
     </div>
   );
