@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { reserveRocket, cancelRocket } from '../../Redux/Rockets/Rockets';
 import './RocketCard.css';
 
-function RocketCard(prop) {
+const RocketCard = (prop) => {
   const { props } = prop;
   const {
     id, rocketName, description, flickrImages, reserved,
@@ -27,10 +27,10 @@ function RocketCard(prop) {
           {reserved && <span>reserved</span>}
           {description}
         </p>
-        <button type="button" id={id} onClick={reservedReckotHandler}>{!reserved ? 'Reserve Rocket' : 'Cancel Reservation'}</button>
+        <button type="button" id={id} onClick={reservedReckotHandler} className={!reserved ? 'reserved' : 'cancel'}>{!reserved ? 'Reserve Rocket' : 'Cancel Reservation'}</button>
       </div>
     </div>
   );
-}
+};
 
 export default RocketCard;
