@@ -18,9 +18,15 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path="/" element={<Rockets />} />
-        <Route path="/missions" element={<Missions />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="SpaceTravelers-React_Redux/rockets" element={<Rockets />} />
+        <Route
+          path="SpaceTravelers-React_Redux/missions"
+          element={<Missions />}
+        />
+        <Route
+          path="SpaceTravelers-React_Redux/profile"
+          element={<Profile />}
+        />
       </Routes>
     </div>
   );
