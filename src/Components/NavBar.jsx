@@ -14,14 +14,14 @@ function NavBar() {
         <NavLink
           className="Nav-Item"
           to="SpaceTravelers-React_Redux/rockets"
-          style={({ isActive }) => (isActive ? { color: 'red' } : { color: 'blue' })}
+          style={({ isActive }) => (isActive ? { textDecoration: 'underline', color: 'red' } : { color: 'blue' })}
         >
           Rockets
         </NavLink>
         <NavLink
           className="Nav-Item"
           to="SpaceTravelers-React_Redux/missions"
-          style={({ isActive }) => (isActive ? { color: 'red' } : { color: 'blue' })}
+          style={({ isActive }) => (isActive ? { textDecoration: 'underline', color: 'red' } : { color: 'blue' })}
         >
           Missions
         </NavLink>

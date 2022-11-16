@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { joinMission } from '../Redux/Missions/Missions';
+import { joinMission, showMissions } from '../Redux/Missions/Missions';
 import TableContent from './TableContent';
 import './MissionTable.css';
 
@@ -10,6 +10,10 @@ export default function MissionTable() {
   const handleMission = (id) => {
     dispatch(joinMission(id));
   };
+
+  useEffect(() => {
+    if (Missions.length === 0) { dispatch(showMissions()); }
+  }, [dispatch, Missions.length]);
 
   return (
     <table className="Table">

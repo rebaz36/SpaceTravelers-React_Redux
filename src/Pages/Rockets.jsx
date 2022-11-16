@@ -8,7 +8,7 @@ const Rockets = () => {
   const rockets = useSelector((state) => state.Rockets.rockets);
   useEffect(() => {
     if (rockets.length === 0) { dispatch(getRockets()); }
-  }, [dispatch]);
+  }, [dispatch, rockets.length]);
   return (
     <>
       <div className="rocketImoji">🚀</div>

@@ -1,8 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { showMissions } from './Redux/Missions/Missions';
+import React from 'react';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import NavBar from './Components/NavBar';
 import Rockets from './Pages/Rockets';
 import Missions from './Pages/Missions';
@@ -11,14 +9,11 @@ import Profile from './Pages/Profile';
 import './App.css';
 
 function App() {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(showMissions());
-  }, []);
   return (
     <div className="App">
       <NavBar />
       <Routes>
+        <Route path="/" element={<Navigate to="SpaceTravelers-React_Redux/rockets" />} />
         <Route
           path="SpaceTravelers-React_Redux/rockets"
           element={<Rockets />}
