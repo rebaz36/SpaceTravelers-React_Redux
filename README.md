@@ -1,4 +1,6 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![Rocket Pages](./projectImage.JPG)
+![Mission page](./projectImage.JPG)
+
 
 # Traverlers Hub
 
