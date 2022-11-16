@@ -20,6 +20,7 @@
 
 .button-wrapper {
   padding: 1rem;
+  width: 12%;
 }
 
 .Active-Member {
@@ -56,4 +57,8 @@
   margin: 10px;
   background-color: #f8d7da;
   color: #721c24;
+}
+
+.status {
+  width: 15%;
 }

@@ -16,7 +16,7 @@ export default function TableContent({
     <tr className={cName}>
       <td className="bold">{name}</td>
       <td className="justify">{des}</td>
-      <td>
+      <td className="status">
         {reserved ? (
           <h3 className="Active-Member-Text">Active Member</h3>
         ) : (
