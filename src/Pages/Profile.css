@@ -1,0 +1,6 @@
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  padding: 2rem 4rem;
+}

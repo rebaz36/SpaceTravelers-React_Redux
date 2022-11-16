@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.container > h3 {
+  text-align: left;
+  margin: 0;
+}
+
+.mission-container {
+  border-radius: 6px;
+  border: rgb(238, 238, 238) solid 1px;
+  padding: 0;
+  margin: 0;
+}
+
+.container > ul > li {
+  list-style: none;
+  height: 40px;
+  padding-left: 10px;
+  text-align: left;
+  border: solid rgb(238, 238, 238) 1px;
+}
+
+.mission:not(.mission:first-child) {
+  border-top: 1px solid gray;
+}

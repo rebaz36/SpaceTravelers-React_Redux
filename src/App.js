@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { showMissions } from './Redux/Missions/Missions';
+import NavBar from './Components/NavBar';
+import Rockets from './Pages/Rockets';
+import Missions from './Pages/Missions';
+import Profile from './Pages/Profile';
+
 import './App.css';
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(showMissions());
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          <code>src/App.js</code>
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Routes>
+        <Route
+          path="SpaceTravelers-React_Redux/rockets"
+          element={<Rockets />}
+        />
+        <Route
+          path="SpaceTravelers-React_Redux/missions"
+          element={<Missions />}
+        />
+        <Route
+          path="SpaceTravelers-React_Redux/profile"
+          element={<Profile />}
+        />
+      </Routes>
     </div>
   );
 }
