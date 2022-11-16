@@ -1,4 +1,4 @@
-# Rocket Pages
+# Rocket Page
 ![](./projectImage.JPG)
 
 # Mission page
