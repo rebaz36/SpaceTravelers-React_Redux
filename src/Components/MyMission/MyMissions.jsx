@@ -10,13 +10,13 @@ const MyMissions = () => {
   return (
     <div className="container">
       <h3>My Missions</h3>
-      <div className="mission-container">
+      <ul className="mission-container">
         {joinedMissions.map((mission) => (
-          <div key={mission.mission_id} className="mission">
+          <li key={mission.mission_id} className="mission">
             {mission.mission_name}
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };
