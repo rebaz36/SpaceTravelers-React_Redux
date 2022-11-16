@@ -1,36 +1,36 @@
-/* eslint-disable camelcase */
-import { GET_MISSIONS } from '../Actions';
+const JOIN_MISSION = 'JOIN_MISSION';
+const UPDATE = 'UPDATE';
 
 // Reducer section
 const missionsReducer = (state = [], action) => {
   switch (action.type) {
-    // case `${ADD_BOOK}/fulfilled`:
-    //   return state.concat(action.meta.arg);
-    // case `${REMOVE_BOOK}/fulfilled`:
-    //   return state.filter((book) => book.item_id !== action.meta.arg);
-    case `${GET_MISSIONS}/fulfilled`:
-      return Object.keys(action.payload).map((key) => {
-        const { mission_id, mission_name, description } = action.payload[key];
-        return {
-          mission_id,
-          mission_name,
-          description,
-        };
+    case UPDATE:
+      return action.data;
+    case JOIN_MISSION:
+      return state.map((e) => {
+        if (e.mission_id === action.payload) {
+          return { ...e, reserved: !e.reserved };
+        }
+        return e;
       });
     default:
       return state;
   }
 };
 
-// // Action creators section
-// export const addBook = (book) => ({
-//   type: ADD_BOOK,
-//   book,
-// });
-
-// export const removeBook = (book) => ({
-//   type: REMOVE_BOOK,
-//   book,
-// });
-
 export default missionsReducer;
+
+// Action Creators
+export const joinMission = (id) => ({
+  type: JOIN_MISSION,
+  payload: id,
+});
+
+export const showMissions = () => async (dispatch) => {
+  const res = await fetch('https://api.spacexdata.com/v3/missions');
+  const data = await res.json();
+  dispatch({
+    type: UPDATE,
+    data,
+  });
+};

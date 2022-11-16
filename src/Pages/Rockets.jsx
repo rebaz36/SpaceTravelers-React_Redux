@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import RocketCard from '../Components/Rocket/RocketCard';
@@ -10,7 +11,7 @@ const Rockets = () => {
     if (rockets.length === 0) { dispatch(getRockets()); }
   }, [dispatch]);
   return (
-    <div className="rockes">
+    <div id="rockets">
       {rockets.map((rocket) => <RocketCard props={rocket} key={rocket.id} />)}
     </div>
   );

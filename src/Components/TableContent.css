@@ -20,12 +20,45 @@
 
 .button-wrapper {
   padding: 1rem;
+  width: 12%;
 }
 
 .Active-Member {
+  border: 1px solid #28a745;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
   background-color: #e9f7ef;
+  color: #155724;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
 }
 
 .Inactive-Member {
+  border: 1px solid #dc3545;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
   background-color: #f8d7da;
+  color: #721c24;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.Active-Member-Text {
+  border: 1px solid #28a745;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  margin: 10px;
+  background-color: #e9f7ef;
+  color: #155724;
+}
+
+.Inactive-Member-Text {
+  border: 1px solid #dc3545;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  margin: 10px;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status {
+  width: 15%;
 }
