@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  border: 1px solid gray;
+}
+
+.missionsContainer {
+  border-radius: 6px;
+}
+
+.mission {
+  padding: 2rem;
+  border: 1px solid gray;
+}
+
+.mission:not(.mission:first-child) {
+  border-top: 1px solid gray;
+}
