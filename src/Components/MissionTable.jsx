@@ -1,22 +1,15 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import getMissions from '../Redux/Missions/MissionsAPI';
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { joinMission } from '../Redux/Missions/Missions';
 import TableContent from './TableContent';
 import './MissionTable.css';
 
 export default function MissionTable() {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    let ignore = false;
-    if (!ignore) {
-      dispatch(getMissions());
-    }
-    return () => {
-      ignore = true;
-    };
-  }, []);
-
   const Missions = useSelector((state) => state.Missions);
+  const dispatch = useDispatch();
+  const handleMission = (id) => {
+    dispatch(joinMission(id));
+  };
 
   return (
     <table className="Table">
@@ -36,6 +29,8 @@ export default function MissionTable() {
             id={mission.mission_id}
             name={mission.mission_name}
             des={mission.description}
+            reserved={mission.reserved}
+            handleMission={handleMission}
           />
         ) : (
           <TableContent
@@ -44,6 +39,8 @@ export default function MissionTable() {
             id={mission.mission_id}
             name={mission.mission_name}
             des={mission.description}
+            reserved={mission.reserved}
+            handleMission={handleMission}
           />
         )))}
       </tbody>
