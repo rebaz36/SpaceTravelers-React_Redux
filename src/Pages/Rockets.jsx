@@ -11,7 +11,7 @@ const Rockets = () => {
     if (rockets.length === 0) { dispatch(getRockets()); }
   }, [dispatch]);
   return (
-    <div className="rockes">
+    <div id="rockets">
       {rockets.map((rocket) => <RocketCard props={rocket} key={rocket.id} />)}
     </div>
   );
