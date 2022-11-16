@@ -6,7 +6,7 @@
 }
 
 #rockets {
-  padding: 3rem 6rem;
+  padding: 1rem 6rem;
 }
 
 .Rocket__card > img {
@@ -83,4 +83,35 @@ button {
   background-color: white;
   color: rgb(24, 162, 184);
   border: rgb(24, 162, 184) solid 1px;
+}
+
+.rocketImoji {
+  font-size: 50px;
+  transform: rotate(45deg);
+  width: fit-content;
+  animation: trans 5s linear 2s infinite;
+  text-align: left;
+  position: relative;
+}
+
+@keyframes trans {
+  0% {
+    left: 0;
+  }
+
+  25% {
+    left: 300px;
+  }
+
+  50% {
+    left: 500px;
+  }
+
+  75% {
+    left: 800px;
+  }
+
+  100% {
+    left: 1260px;
+  }
 }
