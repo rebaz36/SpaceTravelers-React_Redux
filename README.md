@@ -1,5 +1,8 @@
-![Rocket Pages](./projectImage.JPG)
-![Mission page](./projectImage.JPG)
+# Rocket Pages
+![](./projectImage.JPG)
+
+# Mission page
+![](./projectImage2.JPG)
 
 
 # Traverlers Hub
