@@ -1,0 +1,39 @@
+/* stylelint-disable selector-type-case */
+/* stylelint-disable selector-type-no-unknown */
+.NavBar {
+  padding: 0.5rem 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Logo-Container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.Logo {
+  width: 100px;
+  height: 100px;
+}
+
+.Nav-List {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+
+.Nav-Item {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.Nav-Item:active {
+  color: #f00;
+}
+
+a {
+  text-decoration: none;
+}
