@@ -33,3 +33,7 @@
 .Nav-Item:active {
   color: #f00;
 }
+
+a {
+  text-decoration: none;
+}
