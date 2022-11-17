@@ -13,7 +13,10 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path="/" element={<Navigate to="SpaceTravelers-React_Redux/rockets" />} />
+        <Route
+          path="SpaceTravelers-React_Redux/"
+          element={<Navigate to="rockets" />}
+        />
         <Route
           path="SpaceTravelers-React_Redux/rockets"
           element={<Rockets />}
